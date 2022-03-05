@@ -1,8 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #747474;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Heebo", sans-serif;
+}
+
 .container {
   max-width: 1170px;
+}
+
+.btn {
+  width: 175px;
+  border-radius: 6px;
+  font-family: "Heebo", sans-serif;
+  color: #fff;
+  height: 70px;
+  line-height: 55px;
+  font-weight: 600;
+  background-image: linear-gradient(#fe8400 0%, #f94622 100%);
+}
+
+.default-header {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 100%;
+}
+
+.menu nav > ul {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 55px;
+       column-gap: 55px;
+}
+.menu nav > ul li {
+  list-style: none;
+}
+.menu nav > ul li a {
+  text-decoration: none;
+  font-family: "Heebo", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+}
+.menu nav > ul li.dropdown {
+  position: relative;
+}
+.menu nav > ul li.dropdown::after {
+  content: "\f0d7";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #fff;
+  padding-left: 5px;
+}
+.menu nav > ul li.dropdown ul {
+  width: 200px;
+  padding: 20px 30px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-60px);
+  transition: all 0.3s ease-in-out;
+}
+.menu nav > ul li.dropdown ul li {
+  margin-bottom: 15px;
+}
+.menu nav > ul li.dropdown ul li a {
+  color: #010101;
+  font-size: 18px;
+}
+.menu nav > ul li.dropdown:hover ul {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.breadcrumb-section {
+  padding: 220px 0 235px;
+  background: linear-gradient(#0eb1d7 0%, #3b47de 30.53%, #432fc2 53.45%, #f37158 100%);
+}
+.breadcrumb-section .breadcrumbs {
+  color: #fff;
+  text-align: center;
+}
+.breadcrumb-section .breadcrumbs h1 {
+  font-size: 34px;
+  font-weight: 700;
+}
+.breadcrumb-section .breadcrumbs h5 {
+  font-size: 18px;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
