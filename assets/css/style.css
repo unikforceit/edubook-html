@@ -9,10 +9,13 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #747474;
+  overflow-x: hidden;
+  line-height: 1.56;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Heebo", sans-serif;
+  line-height: 1.2;
 }
 
 .container {
@@ -35,6 +38,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 55px;
   left: 0;
   width: 100%;
+  z-index: 2;
 }
 
 .menu nav > ul {
@@ -91,7 +95,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .breadcrumb-section {
   padding: 220px 0 235px;
-  background: linear-gradient(#0eb1d7 0%, #3b47de 30.53%, #432fc2 53.45%, #f37158 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.breadcrumb-section .b-shape {
+  position: absolute;
+  left: 10%;
+  top: 45%;
 }
 .breadcrumb-section .breadcrumbs {
   color: #fff;
@@ -100,8 +112,74 @@ h1, h2, h3, h4, h5, h6 {
 .breadcrumb-section .breadcrumbs h1 {
   font-size: 34px;
   font-weight: 700;
+  background-image: url("/assets/image/title_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .breadcrumb-section .breadcrumbs h5 {
   font-size: 18px;
   font-weight: 400;
+}
+
+.blog-area {
+  padding: 120px 0;
+}
+.blog-area .blog-item {
+  margin-bottom: 50px;
+}
+.blog-area .blog-item .blog-img img {
+  border-radius: 5px;
+}
+.blog-area .blog-item .blog-attr {
+  display: flex;
+  position: relative;
+}
+.blog-area .blog-item .blog-attr .blog-attr1 {
+  margin-top: 20px;
+}
+.blog-area .blog-item .blog-attr .blog-attr1 ul {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+.blog-area .blog-item .blog-attr .blog-attr1 ul li {
+  list-style: none;
+}
+.blog-area .blog-item .blog-attr .blog-attr1 ul li img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.blog-area .blog-item .blog-attr .blog-attr1 ul li a {
+  text-decoration: none;
+  color: #747474;
+}
+.blog-area .blog-item .blog-attr .blog-attr2 .date {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  background-image: url("/assets/image/date_bg.png");
+  height: 83px;
+  width: 186px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 83px;
+  z-index: -1;
+}
+.blog-area .blog-item .title {
+  margin-top: 30px;
+}
+.blog-area .blog-item .title h3 a {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #303032;
+}
+.blog-area .blog-item .excerpt p {
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */
